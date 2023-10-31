@@ -1,3 +1,3 @@
 # Password generator
 
-## Creazione di un generatore di password tramite JS
+## Creazione di un generatore di password tramite JavaScript
