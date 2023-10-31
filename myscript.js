@@ -14,19 +14,23 @@ elementPassword.innerHTML = 'La tua Password: ';
 // const cognomeImput = prompt('Inserisci il tuo cognome');
 // const colorImput = prompt('Inserisci il tuo colore preferito');
 
-elementNome.innerHTML += prompt('Inserisci il tuo nome');
+const nomeUtente = prompt('Inserisci il tuo nome');
+elementNome.innerHTML += nomeUtente;
+
 console.log(elementNome);
-elementCognome.innerHTML += prompt('Inserisci il tuo cognome');
+
+const cognomeUtente = prompt('Inserisci il tuo cognome');
+elementCognome.innerHTML += cognomeUtente;
+
 console.log(elementCognome);
-elementColor.innerHTML += prompt('Inserisci il tuo colore preferito');
+
+const coloreUtente = prompt('Inserisci il tuo colore preferito');
+elementColor.innerHTML += coloreUtente;
 console.log(elementColor);
 
-elementPassword.innerHTML +=
-  prompt('Inserisci il tuo nome') +
-  prompt('Inserisci il tuo cognome') +
-  prompt('Inserisci il tuo colore preferito');
+const x = Math.floor(Math.random() * 100 + 1);
+//document.getElementById('number').innerHTML = x;
+
+elementPassword.innerHTML += nomeUtente + cognomeUtente + coloreUtente + x;
 
 console.log(elementPassword);
-
-let x = Math.floor(Math.random() * 100 + 1);
-document.getElementById('number').innerHTML = x;
